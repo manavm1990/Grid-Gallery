@@ -19,6 +19,8 @@ way that you want.
 
 This repo has been severely stripped down to allow us to focus specifically on HTML/CSS only. It's certainly not intended for use in production. Please reference [HTML5 Boilerplate](https://html5boilerplate.com/) for production-grade builds (beyond the scope of this class).
 
+To get started, after cloning this repo, `cd` into the `clone`d directory and do: `npm install`.
+
 ## License
 
 The code is available under the [MIT license](LICENSE.txt).
