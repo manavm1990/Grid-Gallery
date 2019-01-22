@@ -1,0 +1,19 @@
+{
+  "recommendations": [
+    "formulahendry.auto-rename-tag",
+    "streetsidesoftware.code-spell-checker",
+    "naumovs.color-highlight",
+    "smelukov.vscode-csstree",
+    "editorconfig.editorconfig",
+    "donjayamanne.githistory",
+    "codezombiech.gitignore",
+    "eamodio.gitlens",
+    "kisstkondoros.vscode-gutter-preview",
+    "pkief.material-icon-theme",
+    "sdras.night-owl",
+    "techer.open-in-browser",
+    "shinnn.stylelint",
+    "ms-vsliveshare.vslivesharePreview",
+    "umoxfo.vscode-w3cvalidation"
+  ]
+}

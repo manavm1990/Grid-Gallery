@@ -1,68 +1,121 @@
 {
-  "devDependencies": {
-    "apache-server-configs": "^3.0.0",
-    "archiver": "^3.0.0",
-    "babel-core": "^6.26.3",
-    "babel-preset-env": "^1.7.0",
-    "babel-register": "^6.26.0",
-    "del": "^3.0.0",
-    "eslint": "^5.6.0",
-    "eslint-config-recommended": "^3.0.0",
-    "eslint-plugin-mocha": "^5.2.0",
-    "glob": "^7.1.3",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^6.0.0",
-    "gulp-eslint": "^5.0.0",
-    "gulp-header": "^2.0.5",
-    "gulp-jscs": "^4.1.0",
-    "gulp-load-plugins": "^1.5.0",
-    "gulp-rename": "^1.4.0",
-    "gulp-replace": "^1.0.0",
-    "jquery": "3.3.1",
-    "main.css": "1.0.0",
-    "mocha": "^5.2.0",
-    "modernizr": "3.6.0",
-    "normalize.css": "8.0.1",
-    "run-sequence": "^2.2.1",
-    "ssri": "^6.0.1",
-    "strip-json-comments": "^2.0.1"
-  },
-  "engines": {
-    "node": ">=6",
-    "npm": ">=3"
-  },
-  "babel": {
-    "presets": [
-      "env"
-    ]
-  },
-  "h5bp-configs": {
-    "directories": {
-      "archive": "archive",
-      "dist": "dist",
-      "src": "src",
-      "test": "test"
-    }
-  },
-  "homepage": "https://html5boilerplate.com/",
-  "license": "MIT",
-  "name": "html5-boilerplate",
+  "name": "html5-boilerplate-176",
+  "version": "1.0.0",
+  "description": "A stripped down version of html5-boilperlate for CIS 176 at SWIC",
+  "main": "index.html",
   "scripts": {
-    "build": "gulp build",
-    "test": "gulp archive && mocha --require babel-core/register --reporter spec --timeout 5000"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "6.1.0",
-  "description": "A professional front-end template for building fast, robust, and adaptable web apps or sites.",
-  "files": [
-    "CHANGELOG.md",
-    "LICENSE.txt",
-    "package.json",
-    "dist/",
-    "modernizr-config.json",
-    "README.md"
-  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/h5bp/html5-boilerplate.git"
+    "url": "git+https://github.com/SWIC-176/html5-boilerplate.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS"
+  ],
+  "author": "Manav Misra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SWIC-176/html5-boilerplate/issues"
+  },
+  "homepage": "https://github.com/SWIC-176/html5-boilerplate#readme",
+  "devDependencies": {
+    "stylelint": "^9.10.1",
+    "stylelint-a11y": "^1.1.10",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-csstree-validator": "^1.3.0",
+    "stylelint-declaration-block-no-ignored-properties": "^1.1.0",
+    "stylelint-group-selectors": "^1.0.7",
+    "stylelint-high-performance-animation": "^1.1.1",
+    "stylelint-no-indistinguishable-colors": "^1.2.1",
+    "stylelint-order": "^2.0.0",
+    "stylelint-z-index-value-constraint": "^1.0.0"
+  },
+  "stylelint": {
+    "extends": "stylelint-config-standard",
+    "plugins": [
+      "stylelint-a11y",
+      "stylelint-csstree-validator",
+      "stylelint-declaration-block-no-ignored-properties",
+      "stylelint-group-selectors",
+      "stylelint-high-performance-animation",
+      "stylelint-no-indistinguishable-colors",
+      "stylelint-order",
+      "stylelint-z-index-value-constraint"
+    ],
+    "rules": {
+      "a11y/media-prefers-reduced-motion": true,
+      "a11y/no-outline-none": true,
+      "a11y/selector-pseudo-class-focus": true,
+      "a11y/content-property-no-static-value": [
+        true,
+        {
+          "severity": "warning"
+        }
+      ],
+      "a11y/font-size-is-readable": [
+        true,
+        {
+          "severity": "warning"
+        }
+      ],
+      "a11y/line-height-is-vertical-rhythmed": [
+        true,
+        {
+          "severity": "warning"
+        }
+      ],
+      "a11y/no-display-none": [
+        true,
+        {
+          "severity": "warning"
+        }
+      ],
+      "a11y/no-spread-text": [
+        true,
+        {
+          "severity": "warning"
+        }
+      ],
+      "a11y/no-obsolete-attribute": [
+        true,
+        {
+          "severity": "warning"
+        }
+      ],
+      "a11y/no-obsolete-element": [
+        true,
+        {
+          "severity": "warning"
+        }
+      ],
+      "a11y/no-text-align-justify": [
+        true,
+        {
+          "severity": "warning"
+        }
+      ],
+      "a11y/media-prefers-color-scheme": [
+        true,
+        {
+          "severity": "warning"
+        }
+      ],
+      "csstree/validator": true,
+      "plugin/declaration-block-no-ignored-properties": true,
+      "plugin/stylelint-group-selectors": true,
+      "plugin/no-low-performance-animation-properties": true,
+      "plugin/stylelint-no-indistinguishable-colors": true,
+      "order/order": [
+        "custom-properties",
+        "declarations"
+      ],
+      "order/properties-alphabetical-order": true,
+      "plugin/z-index-value-constraint": {
+        "min": 1,
+        "max": 10
+      }
+    }
   }
 }
