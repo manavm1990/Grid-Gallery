@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/SWIC-176/html5-boilerplate#readme",
   "devDependencies": {
+    "http-server": "^0.11.1",
     "stylelint": "^9.10.1",
     "stylelint-a11y": "^1.1.10",
     "stylelint-config-standard": "^18.2.0",
