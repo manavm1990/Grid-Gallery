@@ -5,3 +5,23 @@
 .d-inline-block {
   display: inline-block;
 }
+
+.d-grid {
+  display: grid;
+}
+
+.col-200-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (min-width: 550px) {
+  .col-200-2 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .col-200-2 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
