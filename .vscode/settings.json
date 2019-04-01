@@ -1,5 +1,10 @@
 {
   "cSpell.words": [
     "SWIC"
-  ]
+  ],
+  "files.autoSave": "onWindowChange",
+  "editor.fontFamily": "\"Fira Code\", Menlo, Monaco, 'Courier New', monospace",
+  "editor.tabSize": 2,
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrapColumn": 100
 }
